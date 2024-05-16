@@ -14,8 +14,10 @@ let misDatos = {
     dni:"45906343",
     comidasFavoritas:["Empanada", "pizza", "milanesa"],
     saludar: function() {
-        return "Hola mi nombre es ${this.nombre} ${this.apellido} y tengo ${this.edad} "
-    }
+        return `Hola mi nombre es ${this.nombre} ${this.apellido} y tengo ${this.edad}. Mi primer comida favorita es ${this.comidasFavoritas[0]}.`;
+        }
 };
 
 console.log(misDatos.saludar());
+
+  
