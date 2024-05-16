@@ -68,3 +68,4 @@ console.log("La posición final del nuevo auto es:", nuevoAuto.posicion);
 
 
 
+
