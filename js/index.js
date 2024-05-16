@@ -14,11 +14,13 @@ let misDatos = {
     dni:"45906343",
     comidasFavoritas:["Empanada", "pizza", "milanesa"],
     saludar: function() {
-        return `Hola mi nombre es ${nombre} ${apellido} y tengo ${edad}. Mi primer comida favorita es ${comidasFavoritas[0]}.`;
+        return `Hola mi nombre es ${this.nombre} ${this.apellido} y tengo ${this.edad}. Mi primer comida favorita es ${this.comidasFavoritas[0]}.`;
         }
 };
 
 console.log(misDatos.saludar());
+
+//ejercicio 3:auto
 
 let auto ={
     marca: "Honda",
@@ -26,17 +28,25 @@ let auto ={
     año: 2020,
     color: "Gris",
     posicion: 0,
-    function avanzar (numero){
-        posicion += numero,
-        return avanzar;
+    avanzar: function (n){
+        this.posicion += n;
+        
     },
 
-    function retroceder (numero){
-        posicion += numero,
-        return retroceder
+    retroceder: function(n){
+        this.posicion += n;
+        
     },
-}
+};
 
-console.log(auto.posicion)
+auto.avanzar(5)
+auto.retroceder(2)
+auto.avanzar(3)
+auto.retroceder(1)
+
+console.log(auto.posicion);
+
+
+
 
 
