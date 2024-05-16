@@ -47,15 +47,32 @@ console.log(precioFinal)
 //Crea una función mitad que reciba un número como parámetro y devuelva su mitad. Tené en cuenta que el operador de división en JavaScript es “ / ”.
 
 function mitad(numero){
-    numero/2
+    return numero/2
 }
 
-console.log(mitad)
+console.log(mitad) 
 
-// Crea una función diaSegunNumero que reciba como parámetros un array y un número y retorne el día correspondiente al número ingresado.
+//Crea una función diaSegunNumero que reciba como parámetros un array y un número y retorne el día correspondiente al número ingresado.
+
 
 function diaSegunNumero(lunes,martes,miercoles,jueves,viernes,sabado,domingo){
-    for(let i=0; i<3; i++)
+    for(let i=0; i<5; i++)
+    return mitad
 }
 
-console.log(dia)
+console.log(diaSegunNumero)
+
+
+function siguiente(numero) {
+    return numero + 1;
+}
+  
+function doble(numero) {
+    return 2 * numero;
+}
+  
+function siguienteDelDoble(numero) {
+     return siguiente(doble(numero));
+}
+  
+  
