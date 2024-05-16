@@ -46,6 +46,24 @@ auto.retroceder(1)
 
 console.log(auto.posicion);
 
+//Ejercicio 4:
+let nuevoAuto ={
+    marca: "Honda",
+    modelo: "Fit",
+    año: 2020,
+    color: "Gris",
+    posicion: 0,
+    moverse: function(movimientos) {
+        for (let i = 0; i < movimientos.length; i++) {
+            this.posicion += movimientos[i];
+            if (this.posicion < 0) {
+                this.posicion = 0; 
+            }
+        }
+    }
+};
+
+console.log("La posición final del nuevo auto es:", nuevoAuto.posicion);
 
 
 
