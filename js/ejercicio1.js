@@ -2,7 +2,7 @@
 
 function area (altura, ancho){
     return altura*ancho
-}
+};
 
 let areas= area("10","5")
 console.log (area);
@@ -17,7 +17,7 @@ console.log (areas);
 function largoDelArray (){
     let largoSorteado = [1,2,3,4,5,6]
     return largoSorteado.length
-}
+};
 
 console.log (largoDelArray);
 
@@ -25,14 +25,15 @@ console.log (largoDelArray);
 
 function cantidadDeLetras(palabra){
     return palabra.length
-}
+};
+
 console.log (cantidadDeLetras);
 
 //Crea una función dolarHoy que reciba como parámetro un precio en pesos argentinos y devuelva el precio en dólares estadounidenses.
 
 function dolarHoy(precio){
     return precio*1000
-}
+};
 
 console.log(dolarHoy);
 
@@ -40,7 +41,7 @@ console.log(dolarHoy);
 
 function precioFinal (precio){
     return precio*25
-}
+};
 
 console.log(precioFinal)
 
@@ -48,7 +49,7 @@ console.log(precioFinal)
 
 function mitad(numero){
     return numero/2
-}
+};
 
 console.log(mitad) 
 
@@ -58,21 +59,21 @@ console.log(mitad)
 function diaSegunNumero(lunes,martes,miercoles,jueves,viernes,sabado,domingo){
     for(let i=0; i<5; i++)
     return mitad
-}
+};
 
 console.log(diaSegunNumero)
 
 
 function siguiente(numero) {
     return numero + 1;
-}
+};
   
 function doble(numero) {
     return 2 * numero;
-}
+};
   
 function siguienteDelDoble(numero) {
      return siguiente(doble(numero));
-}
+};
   
   

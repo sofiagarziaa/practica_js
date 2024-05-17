@@ -25,17 +25,15 @@ console.log(misDatos.saludar());
 let auto ={
     marca: "Honda",
     modelo: "Fit",
-    año: 2020,
+    anio: 2020,
     color: "Gris",
     posicion: 0,
     avanzar: function (n){
-        this.posicion += n;
-        
+        this.posicion += n  
     },
 
     retroceder: function(n){
-        this.posicion += n;
-        
+        this.posicion -= n
     },
 };
 
@@ -44,7 +42,7 @@ auto.retroceder(2)
 auto.avanzar(3)
 auto.retroceder(1)
 
-console.log(auto.posicion);
+console.log("posicion final del auto" auto.posicion);
 
 //Ejercicio 4:
 let nuevoAuto ={
@@ -64,5 +62,37 @@ let nuevoAuto ={
 };
 
 console.log("La posición final del nuevo auto es:", nuevoAuto.posicion);
+
+
+//Ejercicio 5:Batalla de superheroes.
+
+
+const ironMan = {
+    nombre: "Tony Stark",
+    equipo: "avengers",
+    poderes: ["rayos destructivos","super fuerza","volar"],
+    energia: 100,
+    getPoder: function(numero){
+       return `Poder elegido de ${this.nombre}, ${this.poderes [numero -1]}, energia restante:${this.eneria -= 10}`
+
+    }
+};
+
+
+const Hulk = {
+    nombre: "Hulk",
+    equipo: "Avengers",
+    poderes: ["Tranformacion","super fuerza"],
+    energia: 110,
+    getPoder: function(numero){
+        return `Poder elegido de ${this.nombre}, ${this.poderes [numero -1]}, energia restante:${this.eneria -= 10}`
+        
+    }
+};
+
+
+
+console.log(ironMan.getPoder(10))
+console.log(Hulk.getPoder(5))
 
 
