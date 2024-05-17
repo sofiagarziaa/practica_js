@@ -42,7 +42,7 @@ auto.retroceder(2)
 auto.avanzar(3)
 auto.retroceder(1)
 
-console.log("posicion final del auto" auto.posicion);
+console.log("posicion final del auto" + auto.posicion);
 
 //Ejercicio 4:
 let nuevoAuto ={
@@ -91,8 +91,15 @@ const Hulk = {
 };
 
 
+for(let i=0; i<10; i++) {
+    let num=numAlAzar();
+    console.log(ironMan.getPoder(num));
+    num = numAlAzar();
+    console.log(Hulk.getPoder(num));
+};
 
-console.log(ironMan.getPoder(10))
-console.log(Hulk.getPoder(5))
+
+console.log(ironMan.getPoder(0))
+console.log(Hulk.getPoder(0))
 
 
