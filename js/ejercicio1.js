@@ -57,8 +57,8 @@ console.log(mitad)
 
 
 function diaSegunNumero(lunes,martes,miercoles,jueves,viernes,sabado,domingo){
-    for(let i=0; i<5; i++)
-    return mitad
+    for(let i=0; i<7; i++)
+    return diaSegunNumero
 };
 
 console.log(diaSegunNumero)

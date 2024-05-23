@@ -91,14 +91,6 @@ const Hulk = {
 };
 
 
-for(let i=0; i<10; i++) {
-    let num=numAlAzar();
-    console.log(ironMan.getPoder(num));
-    num = numAlAzar();
-    console.log(Hulk.getPoder(num));
-};
-
-
 console.log(ironMan.getPoder(0))
 console.log(Hulk.getPoder(0))
 
