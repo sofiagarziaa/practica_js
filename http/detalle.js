@@ -26,9 +26,9 @@ document.addEventListener('DOMContentLoaded', async () => {
         const characterData = await response.json();
 
         // Asignar los datos del personaje a los elementos HTML
-        document.querySelector('.character-name').textContent = characterData.name;
-        document.querySelector('.character-status').textContent += characterData.status;
-        document.querySelector('.character-species').textContent += characterData.species;
+        document.querySelector('.character-name').innerHTML= characterData.name;
+        document.querySelector('.character-status').innerHTML += characterData.status;
+        document.querySelector('.character-species').innerHTML += characterData.species;
         document.querySelector('.character-image').src = characterData.image;
     } catch (error) {
         console.error('Error:', error);
