@@ -44,7 +44,7 @@ auto.retroceder(1)
 
 console.log("posicion final del auto" + auto.posicion);
 
-//Ejercicio 4:
+//Ejercicio 4: (hacer de nuevo)
 let nuevoAuto ={
     marca: "Honda",
     modelo: "Fit",

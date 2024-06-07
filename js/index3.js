@@ -69,7 +69,7 @@ let question3 = "¿Cuantos km camina x dia?";
 caminata = prompt(question3)
 
 function filosofoHipster(nacionalidad,profesion,caminata){
-    if (nacionalidad==="argentina"&& profesion==="filosofo" && caminata=="2km"){
+    if (nacionalidad==="argentina" && profesion==="filosofo" && caminata=="2km"){
         return "soy un filosofo hipster";
     }else{
         return "No soy un filosofo hipster";
